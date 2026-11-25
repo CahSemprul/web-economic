@@ -1,0 +1,19 @@
+[Unit]
+Description=EkonAnalisis Node.js Server (dreceh.my.id)
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+WorkingDirectory=/var/www/ekonanalisis-dreceh
+EnvironmentFile=/var/www/ekonanalisis-dreceh/.env
+Environment=NODE_ENV=production
+Environment=PORT=3000
+Environment=NODE_OPTIONS=--max-old-space-size=384
+ExecStart=/usr/bin/node server.ts
+Restart=always
+RestartSec=5
+MemoryMax=512M
+
+[Install]
+WantedBy=multi-user.target

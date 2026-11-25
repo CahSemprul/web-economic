@@ -1,0 +1,8 @@
+{
+  "name": "EkonAnalisis — Analisis Ekonomi & Pasar Real-Time",
+  "description": "Portal analisis ekonomi real-time untuk memantau IHSG, saham IDX, valuta asing, komoditas global, kalender ekonomi makro, grafik interaktif Recharts, dan agregator berita finansial.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
